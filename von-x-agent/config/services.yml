@@ -1,12 +1,12 @@
 # Documentation: https://github.com/bcgov/von-agent-template/tree/master/von-x-agent/config
 
 issuers:
-  my-organization:
-    name: my-org-full-name
-    abbreviation: my-organization
-    url: https://www.my-organization.ca/my-organization-info-page
-    email: info@my-organization.ca
-    logo_path: ../assets/img/my-organization-logo.jpg
+  paul-x-change:
+    name: PaulXchange
+    abbreviation: paul-x-change
+    url: https://www.paul-x-change.ca/paul-x-change-info-page
+    email: info@paul-x-change.ca
+    logo_path: ../assets/img/paul-x-change-logo.jpg
     endpoint: $ENDPOINT_URL
 
     connection:
@@ -32,10 +32,10 @@ issuers:
 
     credential_types:
     - description: Permit
-      schema: my-permit.my-organization
-      issuer_url: $APPLICATION_URL/my-organization/my-permit
-      depends_on:
-        - dflow_registration
+      schema: paul-root-permit.paul-x-change
+      issuer_url: $APPLICATION_URL/paul-x-change/paul-root-permit
+      # depends_on:
+      #   - dflow_registration
       credential:
         effective_date:
           input: effective_date

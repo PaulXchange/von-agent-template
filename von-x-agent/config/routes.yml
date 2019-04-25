@@ -1,29 +1,29 @@
 # Documentation: https://github.com/bcgov/von-agent-template/tree/master/von-x-agent/config
 
 forms:
-  my-permit:
+  paul-root-permit:
 
-    # URL for the Web form - becomes <server>/<path> e.g. http://localhost:5000/my-organization/my-permit
-    path: /my-organization/my-permit
+    # URL for the Web form - becomes <server>/<path> e.g. http://localhost:5000/paul-x-change/paul-root-permit
+    path: /paul-x-change/paul-root-permit
   
     # type is always "issue-credential"
     type: issue-credential
   
-    schema_name: my-permit.my-organization
-    page_title: my-org-full-name Permits
-    title: Application for my-permit
+    schema_name: paul-root-permit.paul-x-change
+    page_title: PaulXchange Permits
+    title: Application for paul-root-permit
   
     # Templates are defined in von-x-agent/templates
     template: bcgov.index.html
   
     description: >
-      my-org-full-name issues my-permit credentials to organizations to authorize those organizations to be able to do something.
+      PaulXchange issues paul-root-permit credentials to organizations to authorize those organizations to be able to do something.
   
-    explanation: Use the form below to apply for a my-permit for your organization.
+    explanation: Use the form below to apply for a paul-root-permit for your organization.
 
-    proof_request:
-      id: dflow_registration
-      connection_id: bctob
+    # proof_request:
+    #   id: dflow_registration
+    #   connection_id: bctob
 
     #js_includes:
     #  - src: js/bc_registries.js
