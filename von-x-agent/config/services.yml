@@ -54,6 +54,14 @@ issuers:
         # "value" identifies where to derive the data value (typically it comes from the claim)
         # "type" - if "value" - is the name of the attribute
         # "format" is an optional data format (default text)
+        - model: name
+          fields:
+            text:
+              input: legal_name
+              from: claim
+            type:
+              input: legal_name
+              from: value
         - model: attribute
           fields:
             type:
