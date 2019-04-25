@@ -9,6 +9,7 @@
   topic: corp_num
 
   attributes:
+    - corp_num
     - legal_name
     - permit_id
     - permit_type

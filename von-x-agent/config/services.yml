@@ -34,8 +34,6 @@ issuers:
     - description: Permit
       schema: paul-root-permit.paul-x-change
       issuer_url: $APPLICATION_URL/paul-x-change/paul-root-permit
-      # depends_on:
-      #   - dflow_registration
       credential:
         effective_date:
           input: effective_date
